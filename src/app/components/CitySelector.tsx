@@ -24,7 +24,7 @@ const CitySelector: React.FC<CitySelectorProps> = ({ selectedCity, onCityChange 
                 onClick={() => onCityChange(cityKey)}
                 aria-pressed={isSelected}
                 aria-label={`Show weather for ${CITIES[cityKey].label}`}
-                data-testid={`city-button-${cityKey}`} // Adding test ID for easier testing
+                data-testid={`city-button-${cityKey}`}
             >
                 {cityKey}
             </button>
